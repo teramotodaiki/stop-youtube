@@ -15,5 +15,7 @@
       "matches": ["*://*.youtube.com/*"],
       "js": ["youtube.js"]
     }
-  ]
+  ],
+  "options_page": "./options.html",
+  "permissions": ["storage"]
 }
