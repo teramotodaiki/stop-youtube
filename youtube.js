@@ -5,10 +5,14 @@ function stopWatching() {
   if (18 <= hours && hours < 24) return; // ok
 
   const video = document.querySelector("video");
-  video.style.display = "none";
-  video.muted = true;
+  if (video) {
+    video.style.display = "none";
+    video.muted = true;
+  }
   const title = document.querySelector(".title");
-  title.textContent = notice;
+  if (title) {
+    title.textContent = notice;
+  }
 
   requestIdleCallback(stopWatching);
 }
